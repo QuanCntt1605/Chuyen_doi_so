@@ -85,9 +85,6 @@ Dental Appointment Agent là nền tảng AI Agent thông minh được thiết 
 | [MySQL Connector](https://dev.mysql.com/doc/connector-python/en/) | 8.x | Kết nối DB |
 | [dotenv](https://pypi.org/project/python-dotenv) | Latest | Quản lý biến môi trường |
 
-### Frontend (Tích Hợp)
-- Giao diện chat đơn giản, hiển thị các bước đặt lịch.
-- Sử dụng Fetch API để gọi backend.
 
 ### AI Models
 - 🤖 **Groq Llama 3** (model: llama3-8b-8192)
@@ -106,14 +103,6 @@ Dental Appointment Agent là nền tảng AI Agent thông minh được thiết 
 ### Bước 4: Setup Database & .env
 1. **Tạo DB**: Chạy script SQL để tạo các tables cần thiết (`sessions`, `messages`, `appointments`).
 2. **File `.env`**:
-   ```
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=your_mysql_password
-   DB_DATABASE=dental_agent
-   API_KEY=your_groq_api_key
-   model=llama3-8b-8192  # Hoặc model khác hỗ trợ bởi Groq
-   ```
 
 ### Bước 5: Chạy Server
 ### Bước 6: Kết Nối Frontend
@@ -162,6 +151,7 @@ QuanNao
 - GitHub: 
 - Email: wwandzvcl2004@gmail.com
 - Zalo: 0345377187
+- Facebook: https://www.facebook.com/dangminhquan.113/
 
 🙏 **Acknowledgments**
 
