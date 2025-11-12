@@ -1,0 +1,29 @@
+[
+    {
+        "customer_name": "Nam",
+        "service_name": "Khám Răng Định Kỳ",
+        "date_time": "nvnam160104@gmail.com",
+        "details": {
+            "duration": "30 phút",
+            "price": "300.000 VND"
+        }
+    },
+    {
+        "customer_name": "Quan",
+        "service_name": "Trám Răng",
+        "date_time": "wwandzvcl2004@gmail.com",
+        "details": {
+            "duration": "45 phút",
+            "price": "500.000 VND"
+        }
+    },
+    {
+        "customer_name": "Nam",
+        "service_name": "Niềng Răng",
+        "date_time": "13/11/2025 05:30",
+        "details": {
+            "duration": "120 phút",
+            "price": "20.000.000 VND"
+        }
+    }
+]
