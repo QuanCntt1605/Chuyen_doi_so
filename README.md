@@ -101,3 +101,72 @@ Dental Appointment Agent là nền tảng AI Agent thông minh được thiết 
 - [Groq API Key](https://console.groq.com/keys) (miễn phí với giới hạn)
 
 ### Bước 1: Clone Repository
+### Bước 2: Tạo Virtual Environment
+### Bước 3: Cài Đặt Dependencies
+### Bước 4: Setup Database & .env
+1. **Tạo DB**: Chạy script SQL để tạo các tables cần thiết (`sessions`, `messages`, `appointments`).
+2. **File `.env`**:
+   ```
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_mysql_password
+   DB_DATABASE=dental_agent
+   API_KEY=your_groq_api_key
+   model=llama3-8b-8192  # Hoặc model khác hỗ trợ bởi Groq
+   ```
+
+### Bước 5: Chạy Server
+### Bước 6: Kết Nối Frontend
+- Tích hợp API vào giao diện chat của phòng khám.
+- API sẽ nhận request từ `/chat`.
+
+## 🚀 Sử Dụng
+### Test API Với Curl
+### Flow Chatbot
+1. **Khởi tạo**: Gửi message → AI chào và hỏi về nhu cầu (dịch vụ).
+2. **Thu thập thông tin**: AI hỏi tên, SĐT, ngày/giờ mong muốn.
+3. **Kiểm tra lịch**: AI gọi tool `check_availability`.
+4. **Xác nhận & Đặt lịch**: User xác nhận → AI gọi tool `book_appointment` → Lưu DB và tạo session mới.
+
+## 📖 API Documentation
+- **Swagger UI**: http://localhost:8000/docs
+- **Endpoints**:
+  - `POST /chat`: Xử lý tin nhắn (required: `message`; optional: `session_uuid`).
+  - `OPTIONS /chat`: CORS preflight.
+
+Chi tiết: Xem `/docs` hoặc file `main.py`.
+
+## 📚 Tài Liệu
+- [API Endpoints Guide](docs/API_ENDPOINTS_GUIDE.md) - Hướng dẫn chi tiết endpoints.
+- [Database Schema](docs/DB_SCHEMA.md) - Cấu trúc tables (`appointments`).
+- [LangChain Setup](docs/LANGCHAIN_SETUP.md) - Cấu hình agent và tools (ví dụ: `check_availability`, `book_appointment`).
+
+## 📸 Screenshots
+*(Bạn có thể thêm các ảnh chụp màn hình giao diện chat hoặc log đặt lịch tại đây)*
+
+## 🤝 Đóng Góp
+Contributions, issues và feature requests đều được chào đón!
+
+1. Fork repository.
+2. Tạo branch (`git checkout -b feature/AddAppointmentTool`).
+3. Commit changes (`git commit -m 'Implement check_availability tool'`).
+4. Push to branch (`git push origin feature/AddAppointmentTool`).
+5. Mở Pull Request.
+
+## 📄 License
+MIT License - xem file `LICENSE` để biết chi tiết.
+
+## 👨‍💻 Tác Giả
+QuanNao
+
+- GitHub: 
+- Email: wwandzvcl2004@gmail.com
+- Zalo: 0345377187
+
+🙏 **Acknowledgments**
+
+- [Groq](https://groq.com) - LLM nhanh chóng cho Tool Calling.
+- [FastAPI](https://fastapi.tiangolo.com) - Framework mạnh mẽ.
+- [LangChain](https://python.langchain.com) - Agent và tools.
+
+⭐ **Cảm ơn bạn đã xem** ⭐
