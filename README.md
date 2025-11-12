@@ -5,6 +5,10 @@
 Nền Tảng Trợ Lý Tư Vấn & Đặt Lịch Khám Răng Thông Minh
 
 ![Nha Khoa Logo](https://cdn-icons-png.flaticon.com/512/3358/3358357.png)
+<p align="center">
+  <img src="logoDaiNam.png" alt="DaiNam University Logo" width="200"/>
+  <img src="LogoAIoTLab.png" alt="AIoTLab Logo" width="170"/>
+</p>
 
 Sử dụng AI để tư vấn dịch vụ, kiểm tra lịch trống và tự động đặt lịch hẹn cho khách hàng.
 
